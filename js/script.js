@@ -214,20 +214,6 @@ function resetAllButtons() {
                 button.style.color = '#012D20'
 			});}
 
-document.getElementById('btn-pills1').addEventListener('click', function () {
-    if (activeButton === 'pill1') {
-        filterPills('pill1');
-        hideAllMessages(); 
-        this.style.backgroundColor = '#FFFFFF'; 
-        this.style.border = '2px solid #012D20';
-    } else {
-        filterPills('pill1');
-        showMessage('text-pills1');
-        this.style.backgroundColor = "#83CD20";
-        this.style.border = "#83CD20";
-    }
-})
-
 buttons.forEach(button => {
     button.addEventListener('click', function() {
     resetAllButtons();
